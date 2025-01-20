@@ -8,17 +8,17 @@ pipeline {
         DOCKER_HUB_CREDENTIALS_ID = 'DevOps-Concept-'
     }
     stages {
-        stage('Checkout Github'){
+        stage('Checkout Github') {
             steps {
                 git branch: 'main', credentialsId: 'DevOps-Concept', url: 'https://github.com/MorielMauni/DevOps-Concept.git'
             }
-        }        
-        stage('Install node dependencies'){
+        }
+        stage('Install node dependencies') {
             steps {
                 sh 'npm install'
             }
         }
-        stage('Build Docker Image'){
+        stage('Build Docker Image') {
             steps {
                 script {
                     echo 'building docker image...'
@@ -26,13 +26,12 @@ pipeline {
                 }
             }
         }
-        stage('Trivy Scan'){
+        stage('Trivy Scan') {
             steps {
-                //sh 'trivy --severity HIGH,CRITICAL --no-progress image --format table -o trivy-scan-report.txt ${DOCKER_HUB_REPO}:latest'
                 sh 'trivy --severity HIGH,CRITICAL --skip-update --no-progress image --format table -o trivy-scan-report.txt ${DOCKER_HUB_REPO}:latest'
             }
         }
-        stage('Push Image to DockerHub'){
+        stage('Push Image to DockerHub') {
             steps {
                 script {
                     echo 'pushing docker image to DockerHub...'
@@ -42,7 +41,7 @@ pipeline {
                 }
             }
         }
-        stage('Install Kubectl & ArgoCD CLI'){
+        stage('Install Kubectl & ArgoCD CLI') {
             steps {
                 sh '''
                 echo 'installing Kubectl & ArgoCD cli...'
@@ -54,12 +53,13 @@ pipeline {
                 '''
             }
         }
-        stage('Apply Kubernetes Manifests & Sync App with ArgoCD'){
+        stage('Apply Kubernetes Manifests & Sync App with ArgoCD') {
             steps {
                 script {
                     kubeconfig(credentialsId: 'kubeconfig', serverUrl: 'https://192.168.49.2:8443') {
                         // Apply RBAC for ArgoCD
-                        sh '''kubectl apply -f - <<EOF
+                        sh '''
+                        cat <<EOF | kubectl apply -f -
                         apiVersion: rbac.authorization.k8s.io/v1
                         kind: ClusterRoleBinding
                         metadata:
@@ -72,8 +72,8 @@ pipeline {
                           kind: ClusterRole
                           name: cluster-admin
                           apiGroup: rbac.authorization.k8s.io
-                        EOF'''
-
+                        EOF
+                        '''
 
                         // Ensure ArgoCD login and sync
                         sh '''
