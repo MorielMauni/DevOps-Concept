@@ -59,8 +59,7 @@ pipeline {
                 script {
                     kubeconfig(credentialsId: 'kubeconfig', serverUrl: 'https://192.168.49.2:8443') {
                         // Apply RBAC for ArgoCD
-                        sh '''
-						kubectl apply -f - <<EOF
+                        sh '''kubectl apply -f - <<EOF
 						apiVersion: rbac.authorization.k8s.io/v1
 						kind: ClusterRoleBinding
 						metadata:
@@ -73,9 +72,7 @@ pipeline {
 						kind: ClusterRole
 						name: cluster-admin
 						apiGroup: rbac.authorization.k8s.io
-						EOF
-						'''
-
+						EOF'''
 
                         // Ensure ArgoCD login and sync
                         sh '''
