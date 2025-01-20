@@ -5,7 +5,7 @@ pipeline {
 	}
 	environment {
 		DOCKER_HUB_REPO = 'morielmauni/moriel-app'
-		DOCKER_HUB_CREDENTIALS_ID = 'gitops-dockerhub'
+		DOCKER_HUB_CREDENTIALS_ID = 'DevOps-Concept-'
 	}
 	stages {
 		stage('Checkout Github'){
