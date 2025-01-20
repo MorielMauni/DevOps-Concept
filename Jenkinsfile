@@ -66,9 +66,9 @@ pipeline {
                         metadata:
                           name: argocd-application-controller-clusterrolebinding
                         subjects:
-                        - kind: ServiceAccount
-                          name: argocd-application-controller
-                          namespace: agrocd
+                          - kind: ServiceAccount
+                            name: argocd-application-controller
+                            namespace: agrocd
                         roleRef:
                           kind: ClusterRole
                           name: cluster-admin
