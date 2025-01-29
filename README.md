@@ -1,4 +1,3 @@
-This repository demonstrates a GitOps workflow using Jenkins Container and ArgoCD to deploy Kubernetes manifests to a Minikube cluster running on a Container. The project integrates Jenkins CI/CD with ArgoCD to enable automated deployments whenever changes are pushed to the GitHub repository.
 
 <img src="https://i.imgur.com/9qNbHiM.jpg" alt="Jenkins Build Process" width="400"/>
 
