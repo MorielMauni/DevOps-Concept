@@ -11,6 +11,8 @@ ArgoCD: Manages the continuous deployment of Kubernetes manifests.
 
 GitHub Webhooks: Triggers the Jenkins pipeline upon git push events.
 
+![Webhook Trigger](https://i.imgur.com/jWwD055.jpg)
+
 Manifests Directory: Contains Kubernetes YAML files for deployment, located in the manifests directory of this repository.
 
 Architecture
@@ -18,7 +20,11 @@ Git Push: Changes to the repository trigger a GitHub webhook.
 
 Jenkins Pipeline: Jenkins fetches the updated repository and interacts with ArgoCD to deploy the manifests.
 
+![ArgoCD Deployment View](https://i.imgur.com/5QepOd7.jpg)
+
 ArgoCD: Syncs the manifests with the Minikube cluster, ensuring the cluster state matches the desired configuration.
+
+![Architecture Diagram](https://i.imgur.com/iWI1QbE.jpg)
 
 Prerequisites
 Tools
@@ -41,14 +47,15 @@ A Jenkins container running outside the Minikube cluster.
 
 ArgoCD installed and configured in the Minikube cluster.
 
+![Final Application State](https://i.imgur.com/6BpeLrE.jpg)
 
-1. ![Architecture Diagram](https://i.imgur.com/iWI1QbE.jpg)
+
+1. 
 2. ![CI/CD Pipeline](https://i.imgur.com/9SmuAKP.jpg)
 3. ![Minikube Cluster Setup](https://i.imgur.com/wlOGQM8.jpg)
 4. 
-5. ![ArgoCD Deployment View](https://i.imgur.com/5QepOd7.jpg)
-6. ![ArgoCD Deployment View (Duplicate)](https://i.imgur.com/5QepOd7.jpg)
-7. ![Webhook Trigger](https://i.imgur.com/jWwD055.jpg)
-8. ![Final Application State](https://i.imgur.com/6BpeLrE.jpg)
+5. 
+
+
 
 
