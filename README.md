@@ -9,6 +9,8 @@ Minikube: Serves as the Kubernetes cluster, with Docker as the driver.
 
 ArgoCD: Manages the continuous deployment of Kubernetes manifests.
 
+![CI/CD Pipeline](https://i.imgur.com/9SmuAKP.jpg)
+
 GitHub Webhooks: Triggers the Jenkins pipeline upon git push events.
 
 ![Final Application State](https://i.imgur.com/6BpeLrE.jpg)
@@ -48,14 +50,3 @@ A Jenkins container running outside the Minikube cluster.
 ArgoCD installed and configured in the Minikube cluster.
 
 ![Webhook Trigger](https://i.imgur.com/jWwD055.jpg)
-
-
-1. 
-2. ![CI/CD Pipeline](https://i.imgur.com/9SmuAKP.jpg)
-3. ![Minikube Cluster Setup](https://i.imgur.com/wlOGQM8.jpg)
-4. 
-5. 
-
-
-
-
