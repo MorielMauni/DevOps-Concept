@@ -21,6 +21,7 @@ Architecture
 Git Push: Changes to the repository trigger a GitHub webhook.
 
 Jenkins Pipeline: Jenkins fetches the updated repository and interacts with ArgoCD to deploy the manifests.
+<img src="https://i.imgur.com/lo0GjSo.jpg" alt="New Image" width="400"/>
 
 ![ArgoCD Deployment View](https://i.imgur.com/5QepOd7.jpg)
 
