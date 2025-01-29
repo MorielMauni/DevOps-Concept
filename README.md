@@ -43,12 +43,13 @@ ArgoCD installed and configured in the Minikube cluster.
 
 Below are the relevant images for this project:
 
-1. ![Architecture Diagram](https://imgur.com/iWI1QbE)
-2. ![CI/CD Pipeline](https://imgur.com/9SmuAKP)
-3. ![Minikube Cluster Setup](https://imgur.com/wlOGQM8)
-4. ![Jenkins Build Process](https://imgur.com/9qNbHiM)
-5. ![ArgoCD Deployment View](https://imgur.com/5QepOd7)
-6. ![ArgoCD Deployment View (Duplicate)](https://imgur.com/5QepOd7)
-7. ![Webhook Trigger](https://imgur.com/jWwD055)
-8. ![Final Application State](https://imgur.com/6BpeLrE)
+1. ![Architecture Diagram](https://i.imgur.com/iWI1QbE.jpg)
+2. ![CI/CD Pipeline](https://i.imgur.com/9SmuAKP.jpg)
+3. ![Minikube Cluster Setup](https://i.imgur.com/wlOGQM8.jpg)
+4. ![Jenkins Build Process](https://i.imgur.com/9qNbHiM.jpg)
+5. ![ArgoCD Deployment View](https://i.imgur.com/5QepOd7.jpg)
+6. ![ArgoCD Deployment View (Duplicate)](https://i.imgur.com/5QepOd7.jpg)
+7. ![Webhook Trigger](https://i.imgur.com/jWwD055.jpg)
+8. ![Final Application State](https://i.imgur.com/6BpeLrE.jpg)
+
 
