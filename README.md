@@ -39,11 +39,16 @@ A Jenkins container running outside the Minikube cluster.
 
 ArgoCD installed and configured in the Minikube cluster.
 
-1. [Architecture Diagram](https://imgur.com/iWI1QbE)
-2. [CI/CD Pipeline](https://imgur.com/9SmuAKP)
-3. [Minikube Cluster Setup](https://imgur.com/wlOGQM8)
-4. [Jenkins Build Process](https://imgur.com/9qNbHiM)
-5. [ArgoCD Deployment View](https://imgur.com/5QepOd7)
-6. [ArgoCD Deployment View (Duplicate)](https://imgur.com/5QepOd7)
-7. [Webhook Trigger](https://imgur.com/jWwD055)
-8. [Final Application State](https://imgur.com/6BpeLrE)
+# Project Images
+
+Below are the relevant images for this project:
+
+1. ![Architecture Diagram](https://imgur.com/iWI1QbE)
+2. ![CI/CD Pipeline](https://imgur.com/9SmuAKP)
+3. ![Minikube Cluster Setup](https://imgur.com/wlOGQM8)
+4. ![Jenkins Build Process](https://imgur.com/9qNbHiM)
+5. ![ArgoCD Deployment View](https://imgur.com/5QepOd7)
+6. ![ArgoCD Deployment View (Duplicate)](https://imgur.com/5QepOd7)
+7. ![Webhook Trigger](https://imgur.com/jWwD055)
+8. ![Final Application State](https://imgur.com/6BpeLrE)
+
