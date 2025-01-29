@@ -11,7 +11,7 @@ ArgoCD: Manages the continuous deployment of Kubernetes manifests.
 
 GitHub Webhooks: Triggers the Jenkins pipeline upon git push events.
 
-![Webhook Trigger](https://i.imgur.com/jWwD055.jpg)
+![Final Application State](https://i.imgur.com/6BpeLrE.jpg)
 
 Manifests Directory: Contains Kubernetes YAML files for deployment, located in the manifests directory of this repository.
 
@@ -47,7 +47,7 @@ A Jenkins container running outside the Minikube cluster.
 
 ArgoCD installed and configured in the Minikube cluster.
 
-![Final Application State](https://i.imgur.com/6BpeLrE.jpg)
+![Webhook Trigger](https://i.imgur.com/jWwD055.jpg)
 
 
 1. 
